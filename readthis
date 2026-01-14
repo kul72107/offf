@@ -1,0 +1,29 @@
+Google, güvenlik sebebiyle "Embedded WebView" (Gömülü Web Görünümü) üzerinden OAuth girişlerini engeller (disallowed_useragent hatası). AI App Maker'ın bunu çözmesi için ona teknik olarak ne yapması gerektiğini söyleyecek anahtar kelimeler ve yöntemler şunlardır.
+
+Bunu kopyalayıp AI'a direkt verebilirsin, en kısadan en uzuna doğru sıraladım:
+
+1. Yöntem: User Agent Değiştirme (En Hızlı ama Riskli)
+WebView'in kimliğini "gerçek bir tarayıcı" gibi göstermektir.
+
+Komut: "WebView bileşeninin UserAgent stringini değiştir. İçindeki '; wv' ibaresini kaldır ve standart bir Chrome mobil tarayıcı UserAgent'ı (örneğin: Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36...) tanımla."
+
+2. Yöntem: Harici Tarayıcı ve Deep Link (En Garantisi)
+Giriş linkini telefondaki Chrome/Safari'de açıp, giriş bitince uygulamaya geri dönmektir.
+
+Komut: "Google Login butonuna tıklandığında URL'i WebView içinde değil, Linking.openURL (veya platforma uygun Intent) kullanarak telefonun varsayılan tarayıcısında aç. Giriş başarılı olduktan sonra token'ı geri almak için uygulamama bir Custom URL Scheme (örn: myapp://auth) veya Deep Link tanımla ve backend'den bu linke yönlendirme yap."
+
+3. Yöntem: "In-App Browser" / "WebBrowser" Oturumu (Modern Yöntem)
+Uygulamadan çıkmadan ama güvenli bir pencere açar (Instagram'ın linkleri açtığı pencere gibi).
+
+Komut: "WebView yerine, iOS için ASWebAuthenticationSession veya SFSafariViewController, Android için Chrome Custom Tabs kullan. React Native kullanıyorsan react-native-inappbrowser-reborn kütüphanesini entegre et. Bu sayede cookieler paylaşılır ve Google girişi güvenli kabul eder."
+
+4. Yöntem: Native Google SDK (En Zoru ama En İyisi)
+Web sitesi üzerinden değil, uygulamanın kendi koduyla giriş yapmak.
+
+Komut: "Web tabanlı giriş yerine, mobil uygulamanın Native Google Sign-In SDK'sını (Firebase Auth gibi) entegre et. Native tarafta alınan idToken'ı, webview'e injectJavaScript ile göndererek oturumu aç."
+
+Özet Tavsiye: AI App Maker muhtemelen en kolay 1. Yöntemi (User Agent) yapabilir. Eğer o çalışmazsa ısrarla 3. Yöntemi (In-App Browser / Custom Tabs) istemelisin.
+
+AI için hazır istem (Prompt):
+
+"Google girişi 'disallowed_useragent' hatası veriyor çünkü WebView kullanıyorsun. Lütfen şu yöntemlerden birini uygula: 1. WebView'in UserAgent stringini gerçek bir mobil tarayıcı gibi değiştir. 2. Veya giriş linkini 'Chrome Custom Tabs' (Android) ve 'ASWebAuthenticationSession' (iOS) kullanarak güvenli bir tarayıcı penceresinde aç."
