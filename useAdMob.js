@@ -1,5 +1,9 @@
 import { useState, useEffect } from "react";
 import { Platform } from "react-native";
+import mobileAds, {
+  RewardedAd,
+  RewardedAdEventType,
+} from "react-native-google-mobile-ads";
 
 // Google AdMob Test IDs - Production'da bunları değiştir!
 export const AD_UNIT_IDS = {
@@ -21,48 +25,39 @@ export const useRewardedAd = (adUnitId) => {
 
   useEffect(() => {
     let rewarded = null;
+    let unsubscribeLoaded = null;
+    let unsubscribeEarned = null;
 
-    const loadAd = async () => {
+    const loadAd = () => {
       try {
-        // Import AdMob modules
-        const { RewardedAd, RewardedAdEventType, TestIds } = await import(
-          "react-native-google-mobile-ads"
-        );
-
         // Create rewarded ad instance
         rewarded = RewardedAd.createForAdRequest(adUnitId, {
           requestNonPersonalizedAdsOnly: true,
         });
 
-        // Set up event listeners
-        const loadedListener = rewarded.addAdEventListener(
+        // Listen for loaded event
+        unsubscribeLoaded = rewarded.addAdEventListener(
           RewardedAdEventType.LOADED,
           () => {
+            console.log("✅ Rewarded ad loaded");
             setIsLoaded(true);
             setIsLoading(false);
-          },
+          }
         );
 
-        const earnedRewardListener = rewarded.addAdEventListener(
+        // Listen for earned reward
+        unsubscribeEarned = rewarded.addAdEventListener(
           RewardedAdEventType.EARNED_REWARD,
           (reward) => {
-            console.log("User earned reward:", reward);
-          },
+            console.log("🎁 User earned reward:", reward);
+          }
         );
 
         setRewardedAd(rewarded);
-
-        // Load the ad
         setIsLoading(true);
         rewarded.load();
-
-        // Cleanup
-        return () => {
-          loadedListener();
-          earnedRewardListener();
-        };
       } catch (err) {
-        console.error("Error loading rewarded ad:", err);
+        console.error("❌ Error loading rewarded ad:", err);
         setError(err);
         setIsLoading(false);
       }
@@ -70,9 +65,13 @@ export const useRewardedAd = (adUnitId) => {
 
     loadAd();
 
+    // Cleanup
     return () => {
-      if (rewarded) {
-        rewarded = null;
+      if (unsubscribeLoaded) {
+        unsubscribeLoaded();
+      }
+      if (unsubscribeEarned) {
+        unsubscribeEarned();
       }
     };
   }, [adUnitId]);
@@ -84,34 +83,37 @@ export const useRewardedAd = (adUnitId) => {
         return;
       }
 
-      try {
-        // Set up one-time listeners for this show
-        const {
-          RewardedAdEventType,
-        } = require("react-native-google-mobile-ads");
+      let unsubscribeEarnedShow = null;
+      let unsubscribeDismissed = null;
 
-        const earnedListener = rewardedAd.addAdEventListener(
+      try {
+        // Listen for reward earned during show
+        unsubscribeEarnedShow = rewardedAd.addAdEventListener(
           RewardedAdEventType.EARNED_REWARD,
           (reward) => {
-            console.log("Reward earned:", reward);
-            earnedListener();
+            console.log("🎁 Reward earned during show:", reward);
+            if (unsubscribeEarnedShow) unsubscribeEarnedShow();
             resolve(reward);
-          },
+          }
         );
 
-        const dismissedListener = rewardedAd.addAdEventListener(
+        // Listen for ad dismissed
+        unsubscribeDismissed = rewardedAd.addAdEventListener(
           RewardedAdEventType.DISMISSED,
           () => {
-            dismissedListener();
+            console.log("👋 Ad dismissed");
+            if (unsubscribeDismissed) unsubscribeDismissed();
             setIsLoaded(false);
-            // Reload ad for next time
-            rewardedAd.load();
-          },
+            setIsLoading(true);
+            rewardedAd.load(); // Reload for next time
+          }
         );
 
         rewardedAd.show();
       } catch (err) {
-        console.error("Error showing rewarded ad:", err);
+        console.error("❌ Error showing ad:", err);
+        if (unsubscribeEarnedShow) unsubscribeEarnedShow();
+        if (unsubscribeDismissed) unsubscribeDismissed();
         reject(err);
       }
     });
@@ -136,14 +138,11 @@ export const useBannerAd = () => {
 // Initialize AdMob
 export const initializeAdMob = async () => {
   try {
-    const { default: mobileAds } = await import(
-      "react-native-google-mobile-ads"
-    );
-    await mobileAds().initialize();
-    console.log("AdMob initialized successfully");
+    const adapterStatuses = await mobileAds().initialize();
+    console.log("✅ AdMob initialized successfully:", adapterStatuses);
     return true;
   } catch (error) {
-    console.error("Failed to initialize AdMob:", error);
+    console.error("❌ Failed to initialize AdMob:", error);
     return false;
   }
 };
