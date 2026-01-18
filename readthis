@@ -1,0 +1,40 @@
+Kritik AdMob Hataları
+1. Ağ Bağlantı Problemi
+ERR_NAME_NOT_RESOLVED
+No address associated with hostname
+Connection timed out
+➜ Söyle: "AdMob reklamları yüklenemiyor çünkü ağ bağlantısı hatası var. DNS çözümleme başarısız oluyor."
+2. AdMob Adapter Hataları
+Failed to create Adapter.
+com.google.ads.mediation.adcolony.AdColonyMediationAdapter
+com.google.ads.mediation.applovin.AppLovinMediationAdapter
+com.google.ads.mediation.vungle.VungleMediationAdapter
+➜ Söyle: "AdMob mediation adapterleri yüklenemedi. Banner ve Rewarded ad çalışmıyor."
+3. API Hatası
+AdvertisingIdClient: getting error as 17: API: ClientTelemetry.API is not available on this device
+API_DISABLED
+➜ Söyle: "Advertising ID servisi devre dışı veya kullanılamıyor."
+4. Splash Screen Service Hatası
+Unable to start service Intent SplashScreenService not found
+AI App Maker'a Söylemen Gerekenler:
+
+"AdMob reklam servisleri bağlanamıyor - network error var"
+"Advertising ID API kullanılamıyor - kod düzeltilmeli"
+"Mediation adapter'ları başarısız - gerekli dependencies eksik olabilir"
+"Rewarded ad için webview ile iletişim kurulmuş mu kontrol et"
+"Internet izni ve network security config doğru mu?"
+
+
+
+AdMob İçin AI'ya Gösterilecek LOGCAT HATA ÇIKTILARI:
+ReactNativeJS: 'Ô£à AdMob initialized successfully:', [ { description: '',
+ReactNativeJS:     name: 'com.google.android.gms.ads.MobileAds' },
+ReactNativeJS:   { description: 'Failed to create Adapter.',
+ReactNativeJS:     name: 'com.google.ads.mediation.vungle.VungleMediationAdapter' },
+ReactNativeJS:     name: 'com.google.ads.mediation.applovin.AppLovinMediationAdapter' },
+ReactNativeJS:     name: 'com.google.ads.mediation.adcolony.AdColonyMediationAdapter' } ]
+AdvertisingIdClient: getting error as 17: API: ClientTelemetry.API is not available on this device. Connection failed with: ConnectionResult{statusCode=API_DISABLED, resolution=null, message=null, clientMethodKey=null}
+Ads     : Update ad debug logging enablement as false
+adservices: Skip logging because Cobalt is disabled.
+adservices: Skip logging because Cobalt logger is null
+Ads     : JS: The jsLoaded GMSG has been sent (https://googleads.g.doubleclick.net/mads/static/sdk/native/sdk-core-v40.html:1017)
