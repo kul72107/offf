@@ -1,30 +1,8 @@
-import { useEffect, useState } from "react";
-import { View, Platform } from "react-native";
+import { View } from "react-native";
+import { BannerAd, BannerAdSize } from "react-native-google-mobile-ads";
 import { AD_UNIT_IDS } from "@/utils/useAdMob";
 
 export default function AdMobBanner({ style }) {
-  const [BannerAd, setBannerAd] = useState(null);
-  const [BannerAdSize, setBannerAdSize] = useState(null);
-
-  useEffect(() => {
-    const loadBanner = async () => {
-      try {
-        const { BannerAd: BannerAdComponent, BannerAdSize: BannerAdSizeEnum } =
-          await import("react-native-google-mobile-ads");
-        setBannerAd(() => BannerAdComponent);
-        setBannerAdSize(BannerAdSizeEnum);
-      } catch (error) {
-        console.error("Failed to load banner ad:", error);
-      }
-    };
-
-    loadBanner();
-  }, []);
-
-  if (!BannerAd || !BannerAdSize) {
-    return null;
-  }
-
   return (
     <View
       style={[{ alignItems: "center", backgroundColor: "transparent" }, style]}
@@ -34,6 +12,12 @@ export default function AdMobBanner({ style }) {
         size={BannerAdSize.ANCHORED_ADAPTIVE_BANNER}
         requestOptions={{
           requestNonPersonalizedAdsOnly: true,
+        }}
+        onAdLoaded={() => {
+          console.log("✅ Banner ad loaded");
+        }}
+        onAdFailedToLoad={(error) => {
+          console.error("❌ Banner ad failed to load:", error);
         }}
       />
     </View>
