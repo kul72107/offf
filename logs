@@ -1,0 +1,478 @@
+> Task :react-native-gesture-handler:generateReleaseLintModel
+> Task :react-native-gesture-handler:extractReleaseAnnotations
+> Task :react-native-gesture-handler:mergeReleaseGeneratedProguardFiles
+> Task :react-native-gesture-handler:mergeReleaseConsumerProguardFiles
+> Task :react-native-gesture-handler:mergeReleaseJavaResource
+> Task :react-native-gesture-handler:syncReleaseLibJars
+> Task :react-native-gesture-handler:bundleReleaseLocalLintAar
+> Task :react-native-gesture-handler:generateReleaseLintVitalModel
+> Task :app:buildCMakeRelWithDebInfo[arm64-v8a]
+> Task :react-native-gesture-handler:lintVitalAnalyzeRelease
+> Task :app:buildCMakeRelWithDebInfo[arm64-v8a]
+C/C++: ninja: Entering directory `/home/expo/workingdir/build/android/app/.cxx/RelWithDebInfo/116c1wd4/arm64-v8a'
+C/C++: ccache /home/expo/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/home/expo/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dreact_native_mmkv_EXPORTS -I/home/expo/workingdir/build/node_modules/react-native-mmkv/android/../MMKV/Core -I/home/expo/workingdir/build/node_modules/react-native-mmkv/android/../cpp -I/home/expo/workingdir/build/node_modules/react-native-mmkv/MMKV/Core -I/home/expo/workingdir/build/node_modules/react-native-mmkv/android/build/generated/source/codegen/jni/. -I/home/expo/workingdir/build/node_modules/react-native-mmkv/android/build/generated/source/codegen/jni/react/renderer/components/RNMmkvSpec -isystem /home/expo/.gradle/caches/8.14.3/transforms/33bbe2fd917fbc01118c1353e729ebb9/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -isystem /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/jsi/include -isystem /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -g -DNDEBUG -fPIC -DFOLLY_NO_CONFIG=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_MOBILE=1 -DFOLLY_HAVE_RECVMMSG=1 -DFOLLY_HAVE_PTHREAD=1 -DFOLLY_HAVE_XSI_STRERROR_R=1 -MD -MT RNMmkvSpec_cxxmodule_autolinked_build/CMakeFiles/react-native-mmkv.dir/home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/NativeMmkvModule.cpp.o -MF RNMmkvSpec_cxxmodule_autolinked_build/CMakeFiles/react-native-mmkv.dir/home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/NativeMmkvModule.cpp.o.d -o RNMmkvSpec_cxxmodule_autolinked_build/CMakeFiles/react-native-mmkv.dir/home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/NativeMmkvModule.cpp.o -c /home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/NativeMmkvModule.cpp
+C/C++: In file included from /home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/NativeMmkvModule.cpp:8:
+C/C++: In file included from /home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/NativeMmkvModule.h:15:
+C/C++: In file included from /home/expo/workingdir/build/node_modules/react-native-mmkv/android/build/generated/source/codegen/jni/react/renderer/components/RNMmkvSpec/RNMmkvSpecJSI.h:12:
+C/C++: In file included from /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/ReactCommon/TurboModule.h:17:
+C/C++: In file included from /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/EventEmitter.h:10:
+C/C++: In file included from /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Function.h:10:
+C/C++: /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:65:3: error: unknown type name 'requires'
+C/C++:    65 |   requires is_jsi_v<JSArgT>
+C/C++:       |   ^
+C/C++: /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:65:28: error: expected ';' at end of declaration
+C/C++:    65 |   requires is_jsi_v<JSArgT>
+C/C++:       |                            ^
+C/C++: /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:68:5: error: unknown type name 'JSArgT'
+C/C++:    68 |     JSArgT&& value,
+C/C++:       |     ^
+C/C++: /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:70:29: error: unknown type name 'ReturnT'
+C/C++:    70 |     -> decltype(static_cast<ReturnT>(
+C/C++:       |                             ^
+C/C++: /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:71:44: error: use of undeclared identifier 'JSArgT'
+C/C++:    71 |         std::move(convert(rt, std::forward<JSArgT>(value)))))
+C/C++:       |                                            ^
+C/C++: /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:74:22: error: unknown type name 'ReturnT'
+C/C++:    74 |   return static_cast<ReturnT>(
+C/C++:       |                      ^
+C/C++: /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:75:42: error: use of undeclared identifier 'JSArgT'
+C/C++:    75 |       std::move(convert(rt, std::forward<JSArgT>(value))));
+C/C++:       |                                          ^
+C/C++: /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:104:3: error: unknown type name 'requires'
+C/C++:   104 |   requires is_jsi_v<T>
+C/C++:       |   ^
+C/C++: /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:104:12: error: variable template partial specialization does not specialize any template argument; to define the primary template, remove the template argument list
+C/C++:   104 |   requires is_jsi_v<T>
+C/C++:       |            ^
+C/C++: /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:104:23: error: expected ';' at end of declaration
+C/C++:   104 |   requires is_jsi_v<T>
+C/C++:       |                       ^
+C/C++: /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:107:5: error: unknown type name 'T'
+C/C++:   107 |     T&& value,
+C/C++:       |     ^
+C/C++: /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:108:70: error: use of undeclared identifier 'T'
+C/C++:   108 |     const std::shared_ptr<CallInvoker>& = nullptr) -> remove_cvref_t<T> {
+C/C++:       |                                                                      ^
+C/C++: /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:109:35: error: use of undeclared identifier 'T'
+C/C++:   109 |   return convert(rt, std::forward<T>(value));
+C/C++:       |                                   ^
+C/C++: In file included from /home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/NativeMmkvModule.cpp:8:
+C/C++: In file included from /home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/NativeMmkvModule.h:15:
+C/C++: In file included from /home/expo/workingdir/build/node_modules/react-native-mmkv/android/build/generated/source/codegen/jni/react/renderer/components/RNMmkvSpec/RNMmkvSpecJSI.h:13:
+C/C++: In file included from /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Bridging.h:13:
+C/C++: /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Class.h:46:19: error: static assertion failed due to requirement 'supportsToJs<facebook::jsi::Object, facebook::jsi::Object>': Incompatible return type
+C/C++:    46 |     static_assert(supportsToJs<ReturnT, JSReturnT>, "Incompatible return type");
+C/C++:       |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C/C++: /home/expo/workingdir/build/node_modules/react-native-mmkv/android/build/generated/source/codegen/jni/react/renderer/components/RNMmkvSpec/RNMmkvSpecJSI.h:171:24: note: in instantiation of function template specialization 'facebook::react::bridging::callFromJs<facebook::jsi::Object, facebook::react::NativeMmkvModule, facebook::jsi::Object, facebook::react::NativeMmkvConfiguration<std::string, std::optional<std::string>, std::optional<std::string>, std::optional<facebook::react::NativeMmkvMode>, std::optional<bool>>, facebook::jsi::Object>' requested here
+C/C++:   171 |       return bridging::callFromJs<jsi::Object>(
+C/C++:       |                        ^
+C/C++: /home/expo/workingdir/build/node_modules/react-native-mmkv/android/build/generated/source/codegen/jni/react/renderer/components/RNMmkvSpec/RNMmkvSpecJSI.h:132:18: note: in instantiation of member function 'facebook::react::NativeMmkvCxxSpec<facebook::react::NativeMmkvModule>::Delegate::createMMKV' requested here
+C/C++:   132 | class JSI_EXPORT NativeMmkvCxxSpec : public TurboModule {
+C/C++:       |                  ^
+C/C++: In file included from /home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/NativeMmkvModule.cpp:8:
+C/C++: In file included from /home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/NativeMmkvModule.h:15:
+C/C++: In file included from /home/expo/workingdir/build/node_modules/react-native-mmkv/android/build/generated/source/codegen/jni/react/renderer/components/RNMmkvSpec/RNMmkvSpecJSI.h:13:
+C/C++: In file included from /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Bridging.h:13:
+C/C++: /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Class.h:48:12: error: no matching function for call to 'toJs'
+C/C++:    48 |     return toJs(
+C/C++:       |            ^~~~
+C/C++: /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:113:6: note: candidate template ignored: substitution failure [with T = facebook::jsi::Object]: implicit instantiation of undefined template 'facebook::react::Bridging<facebook::jsi::Object>'
+C/C++:   113 | auto toJs(
+C/C++:       |      ^
+C/C++:   114 |     jsi::Runtime& rt,
+C/C++:   115 |     T&& value,
+C/C++:   116 |     const std::shared_ptr<CallInvoker>& = nullptr)
+C/C++:   117 |     -> decltype(Bridging<bridging_t<T>>::toJs(rt, std::forward<T>(value))) {
+C/C++:       |                 ~~~~~~~~
+C/C++: /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:122:6: note: candidate template ignored: substitution failure [with T = facebook::jsi::Object]: implicit instantiation of undefined template 'facebook::react::Bridging<facebook::jsi::Object>'
+C/C++:   122 | auto toJs(
+C/C++:       |      ^
+C/C++:   123 |     jsi::Runtime& rt,
+C/C++:   124 |     T&& value,
+C/C++:   125 |     const std::shared_ptr<CallInvoker>& jsInvoker)
+C/C++:   126 |     -> decltype(Bridging<bridging_t<T>>::toJs(
+C/C++:       |                 ~~~~~~~~
+C/C++: 15 errors generated.
+C/C++: ccache /home/expo/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/home/expo/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dreact_native_mmkv_EXPORTS -I/home/expo/workingdir/build/node_modules/react-native-mmkv/android/../MMKV/Core -I/home/expo/workingdir/build/node_modules/react-native-mmkv/android/../cpp -I/home/expo/workingdir/build/node_modules/react-native-mmkv/MMKV/Core -I/home/expo/workingdir/build/node_modules/react-native-mmkv/android/build/generated/source/codegen/jni/. -I/home/expo/workingdir/build/node_modules/react-native-mmkv/android/build/generated/source/codegen/jni/react/renderer/components/RNMmkvSpec -isystem /home/expo/.gradle/caches/8.14.3/transforms/33bbe2fd917fbc01118c1353e729ebb9/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -isystem /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/jsi/include -isystem /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -g -DNDEBUG -fPIC -DFOLLY_NO_CONFIG=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_MOBILE=1 -DFOLLY_HAVE_RECVMMSG=1 -DFOLLY_HAVE_PTHREAD=1 -DFOLLY_HAVE_XSI_STRERROR_R=1 -MD -MT RNMmkvSpec_cxxmodule_autolinked_build/CMakeFiles/react-native-mmkv.dir/home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/MmkvHostObject.cpp.o -MF RNMmkvSpec_cxxmodule_autolinked_build/CMakeFiles/react-native-mmkv.dir/home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/MmkvHostObject.cpp.o.d -o RNMmkvSpec_cxxmodule_autolinked_build/CMakeFiles/react-native-mmkv.dir/home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/MmkvHostObject.cpp.o -c /home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/MmkvHostObject.cpp
+C/C++: In file included from /home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/MmkvHostObject.cpp:9:
+C/C++: In file included from /home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/MmkvHostObject.h:12:
+C/C++: In file included from /home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/NativeMmkvModule.h:15:
+C/C++: In file included from /home/expo/workingdir/build/node_modules/react-native-mmkv/android/build/generated/source/codegen/jni/react/renderer/components/RNMmkvSpec/RNMmkvSpecJSI.h:12:
+C/C++: In file included from /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/ReactCommon/TurboModule.h:17:
+C/C++: In file included from /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/EventEmitter.h:10:
+C/C++: In file included from /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Function.h:10:
+C/C++: /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:65:3: error: unknown type name 'requires'
+C/C++:    65 |   requires is_jsi_v<JSArgT>
+C/C++:       |   ^
+C/C++: /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:65:28: error: expected ';' at end of declaration
+C/C++:    65 |   requires is_jsi_v<JSArgT>
+C/C++:       |                            ^
+C/C++: /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:68:5: error: unknown type name 'JSArgT'
+C/C++:    68 |     JSArgT&& value,
+C/C++:       |     ^
+C/C++: /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:70:29: error: unknown type name 'ReturnT'
+C/C++:    70 |     -> decltype(static_cast<ReturnT>(
+C/C++:       |                             ^
+C/C++: /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:71:44: error: use of undeclared identifier 'JSArgT'
+C/C++:    71 |         std::move(convert(rt, std::forward<JSArgT>(value)))))
+C/C++:       |                                            ^
+C/C++: /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:74:22: error: unknown type name 'ReturnT'
+C/C++:    74 |   return static_cast<ReturnT>(
+C/C++:       |                      ^
+C/C++: /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:75:42: error: use of undeclared identifier 'JSArgT'
+C/C++:    75 |       std::move(convert(rt, std::forward<JSArgT>(value))));
+C/C++:       |                                          ^
+C/C++: /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:104:3: error: unknown type name 'requires'
+C/C++:   104 |   requires is_jsi_v<T>
+C/C++:       |   ^
+C/C++: /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:104:12: error: variable template partial specialization does not specialize any template argument; to define the primary template, remove the template argument list
+C/C++:   104 |   requires is_jsi_v<T>
+C/C++:       |            ^
+C/C++: /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:104:23: error: expected ';' at end of declaration
+C/C++:   104 |   requires is_jsi_v<T>
+C/C++:       |                       ^
+C/C++: /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:107:5: error: unknown type name 'T'
+C/C++:   107 |     T&& value,
+C/C++:       |     ^
+C/C++: /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:108:70: error: use of undeclared identifier 'T'
+C/C++:   108 |     const std::shared_ptr<CallInvoker>& = nullptr) -> remove_cvref_t<T> {
+C/C++:       |                                                                      ^
+C/C++: /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:109:35: error: use of undeclared identifier 'T'
+C/C++:   109 |   return convert(rt, std::forward<T>(value));
+C/C++:       |                                   ^
+C/C++: 13 errors generated.
+> Task :app:buildCMakeRelWithDebInfo[arm64-v8a] FAILED
+[Incubating] Problems report is available at: file:///home/expo/workingdir/build/android/build/reports/problems/problems-report.html
+FAILURE: Build failed with an exception.
+* What went wrong:
+Execution failed for task ':app:buildCMakeRelWithDebInfo[arm64-v8a]'.
+> com.android.ide.common.process.ProcessException: ninja: Entering directory `/home/expo/workingdir/build/android/app/.cxx/RelWithDebInfo/116c1wd4/arm64-v8a'
+  [0/2] Re-checking globbed directories...
+  [1/199] Building CXX object rnasyncstorage_autolinked_build/CMakeFiles/react_codegen_rnasyncstorage.dir/react/renderer/components/rnasyncstorage/States.cpp.o
+  [2/199] Building CXX object rnasyncstorage_autolinked_build/CMakeFiles/react_codegen_rnasyncstorage.dir/rnasyncstorage-generated.cpp.o
+  [3/199] Building CXX object rnasyncstorage_autolinked_build/CMakeFiles/react_codegen_rnasyncstorage.dir/react/renderer/components/rnasyncstorage/EventEmitters.cpp.o
+  [4/199] Building CXX object rnasyncstorage_autolinked_build/CMakeFiles/react_codegen_rnasyncstorage.dir/react/renderer/components/rnasyncstorage/rnasyncstorageJSI-generated.cpp.o
+  [5/199] Building CXX object rnasyncstorage_autolinked_build/CMakeFiles/react_codegen_rnasyncstorage.dir/react/renderer/components/rnasyncstorage/Props.cpp.o
+  [6/199] Building CXX object 'RNCSlider_autolinked_build/CMakeFiles/react_codegen_RNCSlider.dir/home/expo/workingdir/build/node_modules/@react-native-community/slider/common/cpp/react/renderer/components/RNCSlider/RNCSliderMeasurementsManager.cpp.o'
+  [7/199] Building CXX object rnasyncstorage_autolinked_build/CMakeFiles/react_codegen_rnasyncstorage.dir/react/renderer/components/rnasyncstorage/ShadowNodes.cpp.o
+  [8/199] Building CXX object rnasyncstorage_autolinked_build/CMakeFiles/react_codegen_rnasyncstorage.dir/react/renderer/components/rnasyncstorage/ComponentDescriptors.cpp.o
+  [9/199] Building CXX object CMakeFiles/appmodules.dir/OnLoad.cpp.o
+  [10/199] Building CXX object 'RNCSlider_autolinked_build/CMakeFiles/react_codegen_RNCSlider.dir/home/expo/workingdir/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/RNCSlider-generated.cpp.o'
+  [11/199] Building CXX object 'RNCSlider_autolinked_build/CMakeFiles/react_codegen_RNCSlider.dir/home/expo/workingdir/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/RNCSliderJSI-generated.cpp.o'
+  [12/199] Building CXX object 'RNCSlider_autolinked_build/CMakeFiles/react_codegen_RNCSlider.dir/home/expo/workingdir/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/States.cpp.o'
+  [13/199] Building CXX object 'RNCSlider_autolinked_build/CMakeFiles/react_codegen_RNCSlider.dir/home/expo/workingdir/build/node_modules/@react-native-community/slider/common/cpp/react/renderer/components/RNCSlider/RNCSliderShadowNode.cpp.o'
+  [14/199] Building CXX object 'RNCSlider_autolinked_build/CMakeFiles/react_codegen_RNCSlider.dir/home/expo/workingdir/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/EventEmitters.cpp.o'
+  [15/199] Building CXX object 'RNCSlider_autolinked_build/CMakeFiles/react_codegen_RNCSlider.dir/home/expo/workingdir/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/ComponentDescriptors.cpp.o'
+  [16/199] Building CXX object 'RNCSlider_autolinked_build/CMakeFiles/react_codegen_RNCSlider.dir/home/expo/workingdir/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/ShadowNodes.cpp.o'
+  [17/199] Building CXX object rnpicker_autolinked_build/CMakeFiles/react_codegen_rnpicker.dir/RNCAndroidDialogPickerState.cpp.o
+  [18/199] Building CXX object rnpicker_autolinked_build/CMakeFiles/react_codegen_rnpicker.dir/RNCAndroidDialogPickerMeasurementsManager.cpp.o
+  [19/199] Building CXX object 'RNCSlider_autolinked_build/CMakeFiles/react_codegen_RNCSlider.dir/home/expo/workingdir/build/node_modules/@react-native-community/slider/android/build/generated/source/codegen/jni/react/renderer/components/RNCSlider/Props.cpp.o'
+  [20/199] Building CXX object rnpicker_autolinked_build/CMakeFiles/react_codegen_rnpicker.dir/RNCAndroidDropdownPickerState.cpp.o
+  [21/199] Linking CXX shared library /home/expo/workingdir/build/android/app/build/intermediates/cxx/RelWithDebInfo/116c1wd4/obj/arm64-v8a/libreact_codegen_RNCSlider.so
+  [22/199] Building CXX object 'rnpicker_autolinked_build/CMakeFiles/react_codegen_rnpicker.dir/home/expo/workingdir/build/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/States.cpp.o'
+  [23/199] Building CXX object rnpicker_autolinked_build/CMakeFiles/react_codegen_rnpicker.dir/RNCAndroidDialogPickerShadowNode.cpp.o
+  [24/199] Building CXX object rnpicker_autolinked_build/CMakeFiles/react_codegen_rnpicker.dir/RNCAndroidDropdownPickerShadowNode.cpp.o
+  [25/199] Building CXX object rnpicker_autolinked_build/CMakeFiles/react_codegen_rnpicker.dir/RNCAndroidDropdownPickerMeasurementsManager.cpp.o
+  [26/199] Building CXX object 'rnpicker_autolinked_build/CMakeFiles/react_codegen_rnpicker.dir/home/expo/workingdir/build/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/ComponentDescriptors.cpp.o'
+  [27/199] Building CXX object 'rnpicker_autolinked_build/CMakeFiles/react_codegen_rnpicker.dir/home/expo/workingdir/build/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/EventEmitters.cpp.o'
+  [28/199] Building CXX object rnpicker_autolinked_build/CMakeFiles/react_codegen_rnpicker.dir/rnpicker.cpp.o
+  [29/199] Building CXX object lottiereactnative_autolinked_build/CMakeFiles/react_codegen_lottiereactnative.dir/react/renderer/components/lottiereactnative/lottiereactnativeJSI-generated.cpp.o
+  [30/199] Building CXX object 'rnpicker_autolinked_build/CMakeFiles/react_codegen_rnpicker.dir/home/expo/workingdir/build/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/rnpickerJSI-generated.cpp.o'
+  [31/199] Building CXX object 'rnpicker_autolinked_build/CMakeFiles/react_codegen_rnpicker.dir/home/expo/workingdir/build/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/ShadowNodes.cpp.o'
+  [32/199] Building CXX object rnskia_autolinked_build/CMakeFiles/react_codegen_rnskia.dir/react/renderer/components/rnskia/EventEmitters.cpp.o
+  [33/199] Building CXX object rnskia_autolinked_build/CMakeFiles/react_codegen_rnskia.dir/react/renderer/components/rnskia/States.cpp.o
+[34/199] Building CXX object 'rnpicker_autolinked_build/CMakeFiles/react_codegen_rnpicker.dir/home/expo/workingdir/build/node_modules/@react-native-picker/picker/android/build/generated/source/codegen/jni/react/renderer/components/rnpicker/Props.cpp.o'
+  [35/199] Linking CXX shared library /home/expo/workingdir/build/android/app/build/intermediates/cxx/RelWithDebInfo/116c1wd4/obj/arm64-v8a/libreact_codegen_rnpicker.so
+[36/199] Building CXX object rnskia_autolinked_build/CMakeFiles/react_codegen_rnskia.dir/react/renderer/components/rnskia/ComponentDescriptors.cpp.o
+  [37/199] Building CXX object rnskia_autolinked_build/CMakeFiles/react_codegen_rnskia.dir/react/renderer/components/rnskia/Props.cpp.o
+  [38/199] Building CXX object rnskia_autolinked_build/CMakeFiles/react_codegen_rnskia.dir/react/renderer/components/rnskia/ShadowNodes.cpp.o
+  [39/199] Building CXX object rngesturehandler_codegen_autolinked_build/CMakeFiles/react_codegen_rngesturehandler_codegen.dir/react/renderer/components/rngesturehandler_codegen/EventEmitters.cpp.o
+  [40/199] Building CXX object rnskia_autolinked_build/CMakeFiles/react_codegen_rnskia.dir/react/renderer/components/rnskia/rnskiaJSI-generated.cpp.o
+  [41/199] Building CXX object rnskia_autolinked_build/CMakeFiles/react_codegen_rnskia.dir/rnskia-generated.cpp.o
+  [42/199] Building CXX object rngesturehandler_codegen_autolinked_build/CMakeFiles/react_codegen_rngesturehandler_codegen.dir/react/renderer/components/rngesturehandler_codegen/States.cpp.o
+  [43/199] Building CXX object rngesturehandler_codegen_autolinked_build/CMakeFiles/react_codegen_rngesturehandler_codegen.dir/react/renderer/components/rngesturehandler_codegen/ComponentDescriptors.cpp.o
+  [44/199] Building CXX object rngesturehandler_codegen_autolinked_build/CMakeFiles/react_codegen_rngesturehandler_codegen.dir/react/renderer/components/rngesturehandler_codegen/ShadowNodes.cpp.o
+  [45/199] Building CXX object rngesturehandler_codegen_autolinked_build/CMakeFiles/react_codegen_rngesturehandler_codegen.dir/rngesturehandler_codegen-generated.cpp.o
+  [46/199] Building CXX object rngesturehandler_codegen_autolinked_build/CMakeFiles/react_codegen_rngesturehandler_codegen.dir/react/renderer/components/rngesturehandler_codegen/rngesturehandler_codegenJSI-generated.cpp.o
+  [47/199] Building CXX object rnreanimated_autolinked_build/CMakeFiles/react_codegen_rnreanimated.dir/react/renderer/components/rnreanimated/ComponentDescriptors.cpp.o
+  [48/199] Building CXX object rngesturehandler_codegen_autolinked_build/CMakeFiles/react_codegen_rngesturehandler_codegen.dir/react/renderer/components/rngesturehandler_codegen/Props.cpp.o
+  [49/199] Building CXX object RNGoogleMobileAdsSpec_autolinked_build/CMakeFiles/react_codegen_RNGoogleMobileAdsSpec.dir/react/renderer/components/RNGoogleMobileAdsSpec/EventEmitters.cpp.o
+  [50/199] Building CXX object RNGoogleMobileAdsSpec_autolinked_build/CMakeFiles/react_codegen_RNGoogleMobileAdsSpec.dir/RNGoogleMobileAdsSpec-generated.cpp.o
+  [51/199] Building CXX object RNGoogleMobileAdsSpec_autolinked_build/CMakeFiles/react_codegen_RNGoogleMobileAdsSpec.dir/react/renderer/components/RNGoogleMobileAdsSpec/States.cpp.o
+  [52/199] Building CXX object RNGoogleMobileAdsSpec_autolinked_build/CMakeFiles/react_codegen_RNGoogleMobileAdsSpec.dir/react/renderer/components/RNGoogleMobileAdsSpec/ComponentDescriptors.cpp.o
+  [53/199] Building CXX object RNGoogleMobileAdsSpec_autolinked_build/CMakeFiles/react_codegen_RNGoogleMobileAdsSpec.dir/react/renderer/components/RNGoogleMobileAdsSpec/RNGoogleMobileAdsSpecJSI-generated.cpp.o
+  [54/199] Building CXX object rnreanimated_autolinked_build/CMakeFiles/react_codegen_rnreanimated.dir/react/renderer/components/rnreanimated/EventEmitters.cpp.o
+  [55/199] Building CXX object RNGoogleMobileAdsSpec_autolinked_build/CMakeFiles/react_codegen_RNGoogleMobileAdsSpec.dir/react/renderer/components/RNGoogleMobileAdsSpec/ShadowNodes.cpp.o
+  [56/199] Building CXX object rnreanimated_autolinked_build/CMakeFiles/react_codegen_rnreanimated.dir/react/renderer/components/rnreanimated/Props.cpp.o
+  [57/199] Building CXX object RNGoogleMobileAdsSpec_autolinked_build/CMakeFiles/react_codegen_RNGoogleMobileAdsSpec.dir/react/renderer/components/RNGoogleMobileAdsSpec/Props.cpp.o
+  [58/199] Building CXX object rnreanimated_autolinked_build/CMakeFiles/react_codegen_rnreanimated.dir/react/renderer/components/rnreanimated/ShadowNodes.cpp.o
+  [59/199] Building CXX object rnreanimated_autolinked_build/CMakeFiles/react_codegen_rnreanimated.dir/react/renderer/components/rnreanimated/States.cpp.o
+  [60/199] Building CXX object rnreanimated_autolinked_build/CMakeFiles/react_codegen_rnreanimated.dir/react/renderer/components/rnreanimated/rnreanimatedJSI-generated.cpp.o
+  [61/199] Building CXX object rnreanimated_autolinked_build/CMakeFiles/react_codegen_rnreanimated.dir/rnreanimated-generated.cpp.o
+  [62/199] Building CXX object safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/home/expo/workingdir/build/node_modules/react-native-safe-area-context/android/build/generated/source/codegen/jni/react/renderer/components/safeareacontext/EventEmitters.cpp.o
+  [63/199] Building CXX object safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/home/expo/workingdir/build/node_modules/react-native-safe-area-context/common/cpp/react/renderer/components/safeareacontext/RNCSafeAreaViewState.cpp.o
+  [64/199] Building CXX object safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/home/expo/workingdir/build/node_modules/react-native-safe-area-context/android/build/generated/source/codegen/jni/react/renderer/components/safeareacontext/States.cpp.o
+  [65/199] Building CXX object safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/home/expo/workingdir/build/node_modules/react-native-safe-area-context/common/cpp/react/renderer/components/safeareacontext/RNCSafeAreaViewShadowNode.cpp.o
+  [66/199] Building CXX object safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/home/expo/workingdir/build/node_modules/react-native-safe-area-context/android/build/generated/source/codegen/jni/react/renderer/components/safeareacontext/ComponentDescriptors.cpp.o
+  [67/199] Building CXX object safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/home/expo/workingdir/build/node_modules/react-native-safe-area-context/android/build/generated/source/codegen/jni/react/renderer/components/safeareacontext/Props.cpp.o
+  [68/199] Building CXX object safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/home/expo/workingdir/build/node_modules/react-native-safe-area-context/android/build/generated/source/codegen/jni/react/renderer/components/safeareacontext/ShadowNodes.cpp.o
+  [69/199] Building CXX object safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/home/expo/workingdir/build/node_modules/react-native-safe-area-context/android/build/generated/source/codegen/jni/react/renderer/components/safeareacontext/safeareacontextJSI-generated.cpp.o
+  [70/199] Building CXX object safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir/home/expo/workingdir/build/node_modules/react-native-safe-area-context/android/build/generated/source/codegen/jni/safeareacontext-generated.cpp.o
+  [71/199] Linking CXX shared library /home/expo/workingdir/build/android/app/build/intermediates/cxx/RelWithDebInfo/116c1wd4/obj/arm64-v8a/libreact_codegen_safeareacontext.so
+  [72/199] Building CXX object rnscreens_autolinked_build/CMakeFiles/react_codegen_rnscreens.dir/home/expo/workingdir/build/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSBottomTabsState.cpp.o
+[73/199] Building CXX object rnscreens_autolinked_build/CMakeFiles/react_codegen_rnscreens.dir/home/expo/workingdir/build/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSBottomTabsShadowNode.cpp.o
+  [74/199] Building CXX object rnscreens_autolinked_build/CMakeFiles/react_codegen_rnscreens.dir/home/expo/workingdir/build/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSFullWindowOverlayShadowNode.cpp.o
+  [75/199] Building CXX object rnscreens_autolinked_build/CMakeFiles/react_codegen_rnscreens.dir/home/expo/workingdir/build/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSScreenStackHeaderConfigState.cpp.o
+  [76/199] Building CXX object rnscreens_autolinked_build/CMakeFiles/react_codegen_rnscreens.dir/home/expo/workingdir/build/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSModalScreenShadowNode.cpp.o
+  [77/199] Building CXX object rnscreens_autolinked_build/CMakeFiles/react_codegen_rnscreens.dir/home/expo/workingdir/build/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSScreenStackHeaderSubviewState.cpp.o
+  [78/199] Building CXX object rnscreens_autolinked_build/CMakeFiles/react_codegen_rnscreens.dir/home/expo/workingdir/build/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSScreenShadowNode.cpp.o
+  [79/199] Building CXX object rnscreens_autolinked_build/CMakeFiles/react_codegen_rnscreens.dir/home/expo/workingdir/build/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSScreenStackHeaderConfigShadowNode.cpp.o
+  [80/199] Building CXX object rnscreens_autolinked_build/CMakeFiles/react_codegen_rnscreens.dir/home/expo/workingdir/build/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSScreenStackHeaderSubviewShadowNode.cpp.o
+  [81/199] Building CXX object rnscreens_autolinked_build/CMakeFiles/react_codegen_rnscreens.dir/home/expo/workingdir/build/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSScreenState.cpp.o
+  [82/199] Building CXX object rnscreens_autolinked_build/CMakeFiles/react_codegen_rnscreens.dir/home/expo/workingdir/build/node_modules/react-native-screens/common/cpp/react/renderer/components/rnscreens/RNSSplitViewScreenShadowNode.cpp.o
+  [83/199] Building CXX object rnscreens_autolinked_build/CMakeFiles/react_codegen_rnscreens.dir/home/expo/workingdir/build/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/States.cpp.o
+  [84/199] Building CXX object rnscreens_autolinked_build/CMakeFiles/react_codegen_rnscreens.dir/rnscreens.cpp.o
+  [85/199] Building CXX object CMakeFiles/appmodules.dir/home/expo/workingdir/build/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o
+  [86/199] Building CXX object rnscreens_autolinked_build/CMakeFiles/react_codegen_rnscreens.dir/home/expo/workingdir/build/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/rnscreensJSI-generated.cpp.o
+  [87/199] Building CXX object rnscreens_autolinked_build/CMakeFiles/react_codegen_rnscreens.dir/home/expo/workingdir/build/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/ShadowNodes.cpp.o
+  [88/199] Building CXX object rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/home/expo/workingdir/build/node_modules/react-native-svg/common/cpp/react/renderer/components/rnsvg/RNSVGImageShadowNode.cpp.o
+  [89/199] Building CXX object rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/home/expo/workingdir/build/node_modules/react-native-svg/common/cpp/react/renderer/components/rnsvg/RNSVGImageState.cpp.o
+  [90/199] Building CXX object rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/home/expo/workingdir/build/node_modules/react-native-svg/common/cpp/react/renderer/components/rnsvg/RNSVGLayoutableShadowNode.cpp.o
+  [91/199] Building CXX object rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/home/expo/workingdir/build/node_modules/react-native-svg/common/cpp/react/renderer/components/rnsvg/RNSVGShadowNodes.cpp.o
+  [92/199] Building CXX object rnscreens_autolinked_build/CMakeFiles/react_codegen_rnscreens.dir/home/expo/workingdir/build/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/EventEmitters.cpp.o
+  [93/199] Building CXX object rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/home/expo/workingdir/build/node_modules/react-native-svg/android/build/generated/source/codegen/jni/react/renderer/components/rnsvg/EventEmitters.cpp.o
+  [94/199] Building CXX object rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/home/expo/workingdir/build/node_modules/react-native-svg/android/build/generated/source/codegen/jni/react/renderer/components/rnsvg/States.cpp.o
+  [95/199] Building CXX object rnscreens_autolinked_build/CMakeFiles/react_codegen_rnscreens.dir/home/expo/workingdir/build/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/ComponentDescriptors.cpp.o
+  [96/199] Building CXX object rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/home/expo/workingdir/build/node_modules/react-native-svg/android/build/generated/source/codegen/jni/react/renderer/components/rnsvg/ComponentDescriptors.cpp.o
+  [97/199] Building CXX object rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/rnsvg.cpp.o
+  [98/199] Building CXX object rnscreens_autolinked_build/CMakeFiles/react_codegen_rnscreens.dir/home/expo/workingdir/build/node_modules/react-native-screens/android/build/generated/source/codegen/jni/react/renderer/components/rnscreens/Props.cpp.o
+  [99/199] Linking CXX shared library /home/expo/workingdir/build/android/app/build/intermediates/cxx/RelWithDebInfo/116c1wd4/obj/arm64-v8a/libreact_codegen_rnscreens.so
+  [100/199] Building CXX object rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/home/expo/workingdir/build/node_modules/react-native-svg/android/build/generated/source/codegen/jni/react/renderer/components/rnsvg/ShadowNodes.cpp.o
+  [101/199] Building CXX object rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/home/expo/workingdir/build/node_modules/react-native-svg/android/build/generated/source/codegen/jni/react/renderer/components/rnsvg/rnsvgJSI-generated.cpp.o
+  [102/199] Building CXX object RNCWebViewSpec_autolinked_build/CMakeFiles/react_codegen_RNCWebViewSpec.dir/RNCWebViewSpec-generated.cpp.o
+  [103/199] Building CXX object RNCWebViewSpec_autolinked_build/CMakeFiles/react_codegen_RNCWebViewSpec.dir/react/renderer/components/RNCWebViewSpec/States.cpp.o
+  [104/199] Building CXX object RNCWebViewSpec_autolinked_build/CMakeFiles/react_codegen_RNCWebViewSpec.dir/react/renderer/components/RNCWebViewSpec/RNCWebViewSpecJSI-generated.cpp.o
+  [105/199] Building CXX object RNCWebViewSpec_autolinked_build/CMakeFiles/react_codegen_RNCWebViewSpec.dir/react/renderer/components/RNCWebViewSpec/EventEmitters.cpp.o
+  [106/199] Building CXX object RNCWebViewSpec_autolinked_build/CMakeFiles/react_codegen_RNCWebViewSpec.dir/react/renderer/components/RNCWebViewSpec/ComponentDescriptors.cpp.o
+  [107/199] Building CXX object rnworklets_autolinked_build/CMakeFiles/react_codegen_rnworklets.dir/react/renderer/components/rnworklets/EventEmitters.cpp.o
+  [108/199] Building CXX object RNCWebViewSpec_autolinked_build/CMakeFiles/react_codegen_RNCWebViewSpec.dir/react/renderer/components/RNCWebViewSpec/ShadowNodes.cpp.o
+  [109/199] Building CXX object rnworklets_autolinked_build/CMakeFiles/react_codegen_rnworklets.dir/react/renderer/components/rnworklets/ComponentDescriptors.cpp.o
+  [110/199] Building CXX object rnworklets_autolinked_build/CMakeFiles/react_codegen_rnworklets.dir/react/renderer/components/rnworklets/Props.cpp.o
+  [111/199] Building CXX object rnworklets_autolinked_build/CMakeFiles/react_codegen_rnworklets.dir/react/renderer/components/rnworklets/States.cpp.o
+  [112/199] Building CXX object RNCWebViewSpec_autolinked_build/CMakeFiles/react_codegen_RNCWebViewSpec.dir/react/renderer/components/RNCWebViewSpec/Props.cpp.o
+  [113/199] Building CXX object rnworklets_autolinked_build/CMakeFiles/react_codegen_rnworklets.dir/react/renderer/components/rnworklets/ShadowNodes.cpp.o
+  [114/199] Building CXX object rnworklets_autolinked_build/CMakeFiles/react_codegen_rnworklets.dir/react/renderer/components/rnworklets/rnworkletsJSI-generated.cpp.o
+  [115/199] Building CXX object rnworklets_autolinked_build/CMakeFiles/react_codegen_rnworklets.dir/rnworklets-generated.cpp.o
+  [116/199] Building CXX object RNMenuViewSpec_autolinked_build/CMakeFiles/react_codegen_RNMenuViewSpec.dir/RNMenuViewSpec-generated.cpp.o
+  [117/199] Building CXX object RNMenuViewSpec_autolinked_build/CMakeFiles/react_codegen_RNMenuViewSpec.dir/react/renderer/components/RNMenuViewSpec/EventEmitters.cpp.o
+  [118/199] Building CXX object RNMenuViewSpec_autolinked_build/CMakeFiles/react_codegen_RNMenuViewSpec.dir/react/renderer/components/RNMenuViewSpec/RNMenuViewSpecJSI-generated.cpp.o
+  [119/199] Building CXX object RNMenuViewSpec_autolinked_build/CMakeFiles/react_codegen_RNMenuViewSpec.dir/react/renderer/components/RNMenuViewSpec/States.cpp.o
+  [120/199] Building CXX object RNMenuViewSpec_autolinked_build/CMakeFiles/react_codegen_RNMenuViewSpec.dir/react/renderer/components/RNMenuViewSpec/ComponentDescriptors.cpp.o
+  [121/199] Building CXX object RNSentrySpec_autolinked_build/CMakeFiles/react_codegen_RNSentrySpec.dir/react/renderer/components/RNSentrySpec/EventEmitters.cpp.o
+  [122/199] Building CXX object RNMenuViewSpec_autolinked_build/CMakeFiles/react_codegen_RNMenuViewSpec.dir/react/renderer/components/RNMenuViewSpec/ShadowNodes.cpp.o
+  [123/199] Building CXX object RNMenuViewSpec_autolinked_build/CMakeFiles/react_codegen_RNMenuViewSpec.dir/react/renderer/components/RNMenuViewSpec/Props.cpp.o
+  [124/199] Building CXX object RNSentrySpec_autolinked_build/CMakeFiles/react_codegen_RNSentrySpec.dir/RNSentrySpec-generated.cpp.o
+  [125/199] Building CXX object RNSentrySpec_autolinked_build/CMakeFiles/react_codegen_RNSentrySpec.dir/react/renderer/components/RNSentrySpec/Props.cpp.o
+  [126/199] Building CXX object rnsvg_autolinked_build/CMakeFiles/react_codegen_rnsvg.dir/home/expo/workingdir/build/node_modules/react-native-svg/android/build/generated/source/codegen/jni/react/renderer/components/rnsvg/Props.cpp.o
+  [127/199] Linking CXX shared library /home/expo/workingdir/build/android/app/build/intermediates/cxx/RelWithDebInfo/116c1wd4/obj/arm64-v8a/libreact_codegen_rnsvg.so
+  [128/199] Building CXX object RNSentrySpec_autolinked_build/CMakeFiles/react_codegen_RNSentrySpec.dir/react/renderer/components/RNSentrySpec/States.cpp.o
+  [129/199] Building CXX object RNSentrySpec_autolinked_build/CMakeFiles/react_codegen_RNSentrySpec.dir/react/renderer/components/RNSentrySpec/ComponentDescriptors.cpp.o
+  [130/199] Building CXX object RNSentrySpec_autolinked_build/CMakeFiles/react_codegen_RNSentrySpec.dir/react/renderer/components/RNSentrySpec/RNSentrySpecJSI-generated.cpp.o
+  [131/199] Building CXX object RNSentrySpec_autolinked_build/CMakeFiles/react_codegen_RNSentrySpec.dir/react/renderer/components/RNSentrySpec/ShadowNodes.cpp.o
+  [132/199] Building CXX object lottiereactnative_autolinked_build/CMakeFiles/react_codegen_lottiereactnative.dir/lottiereactnative-generated.cpp.o
+  [133/199] Building CXX object lottiereactnative_autolinked_build/CMakeFiles/react_codegen_lottiereactnative.dir/react/renderer/components/lottiereactnative/EventEmitters.cpp.o
+  [134/199] Building CXX object lottiereactnative_autolinked_build/CMakeFiles/react_codegen_lottiereactnative.dir/react/renderer/components/lottiereactnative/States.cpp.o
+  [135/199] Building CXX object RNKC_autolinked_build/CMakeFiles/react_codegen_RNKC.dir/home/expo/workingdir/build/node_modules/react-native-keyboard-controller/common/cpp/react/renderer/components/RNKC/RNKCKeyboardBackgroundViewShadowNode.cpp.o
+  [136/199] Building CXX object lottiereactnative_autolinked_build/CMakeFiles/react_codegen_lottiereactnative.dir/react/renderer/components/lottiereactnative/ShadowNodes.cpp.o
+  [137/199] Building CXX object lottiereactnative_autolinked_build/CMakeFiles/react_codegen_lottiereactnative.dir/react/renderer/components/lottiereactnative/ComponentDescriptors.cpp.o
+  [138/199] Building CXX object RNKC_autolinked_build/CMakeFiles/react_codegen_RNKC.dir/home/expo/workingdir/build/node_modules/react-native-keyboard-controller/common/cpp/react/renderer/components/RNKC/RNKCKeyboardExtenderShadowNode.cpp.o
+  [139/199] Building CXX object RNKC_autolinked_build/CMakeFiles/react_codegen_RNKC.dir/home/expo/workingdir/build/node_modules/react-native-keyboard-controller/common/cpp/react/renderer/components/RNKC/RNKCKeyboardControllerViewShadowNode.cpp.o
+  [140/199] Building CXX object RNKC_autolinked_build/CMakeFiles/react_codegen_RNKC.dir/home/expo/workingdir/build/node_modules/react-native-keyboard-controller/common/cpp/react/renderer/components/RNKC/RNKCKeyboardGestureAreaShadowNode.cpp.o
+  [141/199] Building CXX object RNKC_autolinked_build/CMakeFiles/react_codegen_RNKC.dir/home/expo/workingdir/build/node_modules/react-native-keyboard-controller/common/cpp/react/renderer/components/RNKC/RNKCOverKeyboardViewShadowNode.cpp.o
+  [142/199] Building CXX object RNKC_autolinked_build/CMakeFiles/react_codegen_RNKC.dir/home/expo/workingdir/build/node_modules/react-native-keyboard-controller/common/cpp/react/renderer/components/RNKC/RNKCOverKeyboardViewState.cpp.o
+  [143/199] Building CXX object RNKC_autolinked_build/CMakeFiles/react_codegen_RNKC.dir/home/expo/workingdir/build/node_modules/react-native-keyboard-controller/android/build/generated/source/codegen/jni/RNKC-generated.cpp.o
+  [144/199] Building CXX object lottiereactnative_autolinked_build/CMakeFiles/react_codegen_lottiereactnative.dir/react/renderer/components/lottiereactnative/Props.cpp.o
+  [145/199] Building CXX object RNKC_autolinked_build/CMakeFiles/react_codegen_RNKC.dir/home/expo/workingdir/build/node_modules/react-native-keyboard-controller/android/build/generated/source/codegen/jni/react/renderer/components/RNKC/States.cpp.o
+  [146/199] Building CXX object RNKC_autolinked_build/CMakeFiles/react_codegen_RNKC.dir/home/expo/workingdir/build/node_modules/react-native-keyboard-controller/android/build/generated/source/codegen/jni/react/renderer/components/RNKC/ComponentDescriptors.cpp.o
+  [147/199] Building CXX object RNKC_autolinked_build/CMakeFiles/react_codegen_RNKC.dir/home/expo/workingdir/build/node_modules/react-native-keyboard-controller/android/build/generated/source/codegen/jni/react/renderer/components/RNKC/RNKCJSI-generated.cpp.o
+  [148/199] Building CXX object RNKC_autolinked_build/CMakeFiles/react_codegen_RNKC.dir/home/expo/workingdir/build/node_modules/react-native-keyboard-controller/android/build/generated/source/codegen/jni/react/renderer/components/RNKC/EventEmitters.cpp.o
+  [149/199] Building CXX object RNKC_autolinked_build/CMakeFiles/react_codegen_RNKC.dir/home/expo/workingdir/build/node_modules/react-native-keyboard-controller/android/build/generated/source/codegen/jni/react/renderer/components/RNKC/ShadowNodes.cpp.o
+  [150/199] Building CXX object RNKC_autolinked_build/CMakeFiles/react_codegen_RNKC.dir/home/expo/workingdir/build/node_modules/react-native-keyboard-controller/android/build/generated/source/codegen/jni/react/renderer/components/RNKC/Props.cpp.o
+  [151/199] Linking CXX shared library /home/expo/workingdir/build/android/app/build/intermediates/cxx/RelWithDebInfo/116c1wd4/obj/arm64-v8a/libreact_codegen_RNKC.so
+  [152/199] Building CXX object RNMmkvSpec_cxxmodule_autolinked_build/CMakeFiles/react-native-mmkv.dir/src/main/cpp/AndroidLogger.cpp.o
+  [153/199] Building CXX object RNMmkvSpec_autolinked_build/CMakeFiles/react_codegen_RNMmkvSpec.dir/react/renderer/components/RNMmkvSpec/EventEmitters.cpp.o
+  [154/199] Building CXX object RNMmkvSpec_autolinked_build/CMakeFiles/react_codegen_RNMmkvSpec.dir/RNMmkvSpec-generated.cpp.o
+  [155/199] Building CXX object RNMmkvSpec_autolinked_build/CMakeFiles/react_codegen_RNMmkvSpec.dir/react/renderer/components/RNMmkvSpec/ComponentDescriptors.cpp.o
+  [156/199] Building CXX object RNMmkvSpec_autolinked_build/CMakeFiles/react_codegen_RNMmkvSpec.dir/react/renderer/components/RNMmkvSpec/Props.cpp.o
+  [157/199] Building CXX object RNMmkvSpec_autolinked_build/CMakeFiles/react_codegen_RNMmkvSpec.dir/react/renderer/components/RNMmkvSpec/States.cpp.o
+  [158/199] Building CXX object RNMmkvSpec_cxxmodule_autolinked_build/core/CMakeFiles/core.dir/MMKV_Android.cpp.o
+  [159/199] Building CXX object RNMmkvSpec_cxxmodule_autolinked_build/CMakeFiles/react-native-mmkv.dir/home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/NativeMmkvModule.cpp.o
+  FAILED: RNMmkvSpec_cxxmodule_autolinked_build/CMakeFiles/react-native-mmkv.dir/home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/NativeMmkvModule.cpp.o 
+  ccache /home/expo/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/home/expo/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dreact_native_mmkv_EXPORTS -I/home/expo/workingdir/build/node_modules/react-native-mmkv/android/../MMKV/Core -I/home/expo/workingdir/build/node_modules/react-native-mmkv/android/../cpp -I/home/expo/workingdir/build/node_modules/react-native-mmkv/MMKV/Core -I/home/expo/workingdir/build/node_modules/react-native-mmkv/android/build/generated/source/codegen/jni/. -I/home/expo/workingdir/build/node_modules/react-native-mmkv/android/build/generated/source/codegen/jni/react/renderer/components/RNMmkvSpec -isystem /home/expo/.gradle/caches/8.14.3/transforms/33bbe2fd917fbc01118c1353e729ebb9/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -isystem /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/jsi/include -isystem /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -g -DNDEBUG -fPIC -DFOLLY_NO_CONFIG=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_MOBILE=1 -DFOLLY_HAVE_RECVMMSG=1 -DFOLLY_HAVE_PTHREAD=1 -DFOLLY_HAVE_XSI_STRERROR_R=1 -MD -MT RNMmkvSpec_cxxmodule_autolinked_build/CMakeFiles/react-native-mmkv.dir/home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/NativeMmkvModule.cpp.o -MF RNMmkvSpec_cxxmodule_autolinked_build/CMakeFiles/react-native-mmkv.dir/home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/NativeMmkvModule.cpp.o.d -o RNMmkvSpec_cxxmodule_autolinked_build/CMakeFiles/react-native-mmkv.dir/home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/NativeMmkvModule.cpp.o -c /home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/NativeMmkvModule.cpp
+  In file included from /home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/NativeMmkvModule.cpp:8:
+  In file included from /home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/NativeMmkvModule.h:15:
+  In file included from /home/expo/workingdir/build/node_modules/react-native-mmkv/android/build/generated/source/codegen/jni/react/renderer/components/RNMmkvSpec/RNMmkvSpecJSI.h:12:
+  In file included from /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/ReactCommon/TurboModule.h:17:
+  In file included from /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/EventEmitter.h:10:
+  In file included from /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Function.h:10:
+  /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:65:3: error: unknown type name 'requires'
+     65 |   requires is_jsi_v<JSArgT>
+        |   ^
+  /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:65:28: error: expected ';' at end of declaration
+     65 |   requires is_jsi_v<JSArgT>
+        |                            ^
+  /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:68:5: error: unknown type name 'JSArgT'
+     68 |     JSArgT&& value,
+        |     ^
+  /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:70:29: error: unknown type name 'ReturnT'
+     70 |     -> decltype(static_cast<ReturnT>(
+        |                             ^
+  /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:71:44: error: use of undeclared identifier 'JSArgT'
+     71 |         std::move(convert(rt, std::forward<JSArgT>(value)))))
+        |                                            ^
+  /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:74:22: error: unknown type name 'ReturnT'
+     74 |   return static_cast<ReturnT>(
+        |                      ^
+  /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:75:42: error: use of undeclared identifier 'JSArgT'
+     75 |       std::move(convert(rt, std::forward<JSArgT>(value))));
+        |                                          ^
+  /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:104:3: error: unknown type name 'requires'
+    104 |   requires is_jsi_v<T>
+        |   ^
+  /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:104:12: error: variable template partial specialization does not specialize any template argument; to define the primary template, remove the template argument list
+    104 |   requires is_jsi_v<T>
+        |            ^
+  /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:104:23: error: expected ';' at end of declaration
+104 |   requires is_jsi_v<T>
+        |                       ^
+  /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:107:5: error: unknown type name 'T'
+    107 |     T&& value,
+        |     ^
+  /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:108:70: error: use of undeclared identifier 'T'
+    108 |     const std::shared_ptr<CallInvoker>& = nullptr) -> remove_cvref_t<T> {
+        |                                                                      ^
+  /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:109:35: error: use of undeclared identifier 'T'
+    109 |   return convert(rt, std::forward<T>(value));
+        |                                   ^
+  In file included from /home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/NativeMmkvModule.cpp:8:
+  In file included from /home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/NativeMmkvModule.h:15:
+  In file included from /home/expo/workingdir/build/node_modules/react-native-mmkv/android/build/generated/source/codegen/jni/react/renderer/components/RNMmkvSpec/RNMmkvSpecJSI.h:13:
+  In file included from /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Bridging.h:13:
+  /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Class.h:46:19: error: static assertion failed due to requirement 'supportsToJs<facebook::jsi::Object, facebook::jsi::Object>': Incompatible return type
+     46 |     static_assert(supportsToJs<ReturnT, JSReturnT>, "Incompatible return type");
+        |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  /home/expo/workingdir/build/node_modules/react-native-mmkv/android/build/generated/source/codegen/jni/react/renderer/components/RNMmkvSpec/RNMmkvSpecJSI.h:171:24: note: in instantiation of function template specialization 'facebook::react::bridging::callFromJs<facebook::jsi::Object, facebook::react::NativeMmkvModule, facebook::jsi::Object, facebook::react::NativeMmkvConfiguration<std::string, std::optional<std::string>, std::optional<std::string>, std::optional<facebook::react::NativeMmkvMode>, std::optional<bool>>, facebook::jsi::Object>' requested here
+    171 |       return bridging::callFromJs<jsi::Object>(
+        |                        ^
+  /home/expo/workingdir/build/node_modules/react-native-mmkv/android/build/generated/source/codegen/jni/react/renderer/components/RNMmkvSpec/RNMmkvSpecJSI.h:132:18: note: in instantiation of member function 'facebook::react::NativeMmkvCxxSpec<facebook::react::NativeMmkvModule>::Delegate::createMMKV' requested here
+    132 | class JSI_EXPORT NativeMmkvCxxSpec : public TurboModule {
+        |                  ^
+  In file included from /home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/NativeMmkvModule.cpp:8:
+  In file included from /home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/NativeMmkvModule.h:15:
+  In file included from /home/expo/workingdir/build/node_modules/react-native-mmkv/android/build/generated/source/codegen/jni/react/renderer/components/RNMmkvSpec/RNMmkvSpecJSI.h:13:
+  In file included from /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Bridging.h:13:
+  /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Class.h:48:12: error: no matching function for call to 'toJs'
+     48 |     return toJs(
+        |            ^~~~
+  /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:113:6: note: candidate template ignored: substitution failure [with T = facebook::jsi::Object]: implicit instantiation of undefined template 'facebook::react::Bridging<facebook::jsi::Object>'
+    113 | auto toJs(
+        |      ^
+    114 |     jsi::Runtime& rt,
+    115 |     T&& value,
+    116 |     const std::shared_ptr<CallInvoker>& = nullptr)
+    117 |     -> decltype(Bridging<bridging_t<T>>::toJs(rt, std::forward<T>(value))) {
+        |                 ~~~~~~~~
+  /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:122:6: note: candidate template ignored: substitution failure [with T = facebook::jsi::Object]: implicit instantiation of undefined template 'facebook::react::Bridging<facebook::jsi::Object>'
+    122 | auto toJs(
+        |      ^
+    123 |     jsi::Runtime& rt,
+    124 |     T&& value,
+    125 |     const std::shared_ptr<CallInvoker>& jsInvoker)
+    126 |     -> decltype(Bridging<bridging_t<T>>::toJs(
+        |                 ~~~~~~~~
+  15 errors generated.
+  [160/199] Building CXX object RNMmkvSpec_cxxmodule_autolinked_build/core/CMakeFiles/core.dir/MMKVLog_Android.cpp.o
+  [161/199] Building CXX object RNMmkvSpec_autolinked_build/CMakeFiles/react_codegen_RNMmkvSpec.dir/react/renderer/components/RNMmkvSpec/RNMmkvSpecJSI-generated.cpp.o
+  [162/199] Building CXX object RNMmkvSpec_cxxmodule_autolinked_build/CMakeFiles/react-native-mmkv.dir/home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/MmkvHostObject.cpp.o
+  FAILED: RNMmkvSpec_cxxmodule_autolinked_build/CMakeFiles/react-native-mmkv.dir/home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/MmkvHostObject.cpp.o 
+  ccache /home/expo/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/home/expo/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dreact_native_mmkv_EXPORTS -I/home/expo/workingdir/build/node_modules/react-native-mmkv/android/../MMKV/Core -I/home/expo/workingdir/build/node_modules/react-native-mmkv/android/../cpp -I/home/expo/workingdir/build/node_modules/react-native-mmkv/MMKV/Core -I/home/expo/workingdir/build/node_modules/react-native-mmkv/android/build/generated/source/codegen/jni/. -I/home/expo/workingdir/build/node_modules/react-native-mmkv/android/build/generated/source/codegen/jni/react/renderer/components/RNMmkvSpec -isystem /home/expo/.gradle/caches/8.14.3/transforms/33bbe2fd917fbc01118c1353e729ebb9/transformed/fbjni-0.7.0/prefab/modules/fbjni/include -isystem /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/jsi/include -isystem /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D__BIONIC_NO_PAGE_SIZE_MACRO -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -g -DNDEBUG -fPIC -DFOLLY_NO_CONFIG=1 -DFOLLY_HAVE_CLOCK_GETTIME=1 -DFOLLY_USE_LIBCPP=1 -DFOLLY_CFG_NO_COROUTINES=1 -DFOLLY_MOBILE=1 -DFOLLY_HAVE_RECVMMSG=1 -DFOLLY_HAVE_PTHREAD=1 -DFOLLY_HAVE_XSI_STRERROR_R=1 -MD -MT RNMmkvSpec_cxxmodule_autolinked_build/CMakeFiles/react-native-mmkv.dir/home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/MmkvHostObject.cpp.o -MF RNMmkvSpec_cxxmodule_autolinked_build/CMakeFiles/react-native-mmkv.dir/home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/MmkvHostObject.cpp.o.d -o RNMmkvSpec_cxxmodule_autolinked_build/CMakeFiles/react-native-mmkv.dir/home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/MmkvHostObject.cpp.o -c /home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/MmkvHostObject.cpp
+  In file included from /home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/MmkvHostObject.cpp:9:
+  In file included from /home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/MmkvHostObject.h:12:
+  In file included from /home/expo/workingdir/build/node_modules/react-native-mmkv/cpp/NativeMmkvModule.h:15:
+  In file included from /home/expo/workingdir/build/node_modules/react-native-mmkv/android/build/generated/source/codegen/jni/react/renderer/components/RNMmkvSpec/RNMmkvSpecJSI.h:12:
+  In file included from /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/ReactCommon/TurboModule.h:17:
+  In file included from /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/EventEmitter.h:10:
+  In file included from /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Function.h:10:
+  /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:65:3: error: unknown type name 'requires'
+     65 |   requires is_jsi_v<JSArgT>
+        |   ^
+  /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:65:28: error: expected ';' at end of declaration
+     65 |   requires is_jsi_v<JSArgT>
+        |                            ^
+  /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:68:5: error: unknown type name 'JSArgT'
+     68 |     JSArgT&& value,
+        |     ^
+  /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:70:29: error: unknown type name 'ReturnT'
+     70 |     -> decltype(static_cast<ReturnT>(
+        |                             ^
+  /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:71:44: error: use of undeclared identifier 'JSArgT'
+     71 |         std::move(convert(rt, std::forward<JSArgT>(value)))))
+        |                                            ^
+  /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:74:22: error: unknown type name 'ReturnT'
+     74 |   return static_cast<ReturnT>(
+        |                      ^
+  /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:75:42: error: use of undeclared identifier 'JSArgT'
+     75 |       std::move(convert(rt, std::forward<JSArgT>(value))));
+        |                                          ^
+  /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:104:3: error: unknown type name 'requires'
+    104 |   requires is_jsi_v<T>
+        |   ^
+  /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:104:12: error: variable template partial specialization does not specialize any template argument; to define the primary template, remove the template argument list
+    104 |   requires is_jsi_v<T>
+        |            ^
+  /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:104:23: error: expected ';' at end of declaration
+    104 |   requires is_jsi_v<T>
+        |                       ^
+  /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:107:5: error: unknown type name 'T'
+    107 |     T&& value,
+        |     ^
+  /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:108:70: error: use of undeclared identifier 'T'
+    108 |     const std::shared_ptr<CallInvoker>& = nullptr) -> remove_cvref_t<T> {
+        |                                                                      ^
+  /home/expo/.gradle/caches/8.14.3/transforms/39d1472b65b41dc709af837d5669dfb0/transformed/react-android-0.81.4-release/prefab/modules/reactnative/include/react/bridging/Base.h:109:35: error: use of undeclared identifier 'T'
+    109 |   return convert(rt, std::forward<T>(value));
+        |                                   ^
+  13 errors generated.
+  [163/199] Building CXX object RNMmkvSpec_autolinked_build/CMakeFiles/react_codegen_RNMmkvSpec.dir/react/renderer/components/RNMmkvSpec/ShadowNodes.cpp.o
+  [164/199] Building CXX object RNMmkvSpec_cxxmodule_autolinked_build/core/CMakeFiles/core.dir/MMKV_OSX.cpp.o
+  [165/199] Building CXX object RNMmkvSpec_cxxmodule_autolinked_build/core/CMakeFiles/core.dir/MMKVLog.cpp.o
+  [166/199] Building CXX object RNMmkvSpec_cxxmodule_autolinked_build/core/CMakeFiles/core.dir/CodedInputData.cpp.o
+  [167/199] Building CXX object RNMmkvSpec_cxxmodule_autolinked_build/core/CMakeFiles/core.dir/MMKV.cpp.o
+  [168/199] Building CXX object RNMmkvSpec_cxxmodule_autolinked_build/core/CMakeFiles/core.dir/MMKV_IO.cpp.o
+  ninja: build stopped: subcommand failed.
+  
+  C++ build system [build] failed while executing:
+      /home/expo/Android/Sdk/cmake/3.22.1/bin/ninja \
+        -C \
+        /home/expo/workingdir/build/android/app/.cxx/RelWithDebInfo/116c1wd4/arm64-v8a \
+        appmodules \
+        react-native-mmkv \
+        react_codegen_RNCSlider \
+        react_codegen_RNKC \
+        react_codegen_rnpicker \
+        react_codegen_rnscreens \
+        react_codegen_rnsvg \
+        react_codegen_safeareacontext
+    from /home/expo/workingdir/build/android/app
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug
+option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+BUILD FAILED in 9m 44s
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+For more on this, please refer to https://docs.gradle.org/8.14.3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+1308 actionable tasks: 1308 executed
+Error: Gradle build failed with unknown error. See logs for the "Run gradlew" phase for more information.
